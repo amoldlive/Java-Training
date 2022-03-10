@@ -6,7 +6,7 @@ public class StringExample {
 	String str = "Hello World";
 
 	// by new keyword
-	String str2 = new String("Hello");
+	String str2 = new String("Hello World");
 
 	public static void main(String[] args) {
 		StringExample stringExample = new StringExample();
@@ -14,40 +14,45 @@ public class StringExample {
 	}
 
 	public void testStringMethods() {
-
+		System.out.println("Raw Data : "+str);
 		// charAt
 		char ch = str.charAt(1);
 		System.out.println("CharAt : " + ch);
 
-		/*
+		
 		// length
 		int length = str.length();
 		System.out.println("length : " + length);
-
+		
 		// substring
 		String subStr = str.substring(2);
 		System.out.println("substring : " + subStr);
 
+		
 		// substring-2
 		String subStr2 = str.substring(2, 5);
 		System.out.println("substring : " + subStr2);
 
+		
 		// contains
 		boolean isContains = str.contains("Hello");
 		System.out.println("isContains : " + isContains);
 
+		
 		// equals
 		boolean isEquals = str.equals("Hello World");
 		System.out.println("isEquals : " + isEquals);
 
+		
 		// eualsignorecase
 		boolean isEqualsIgnoreCase = str.equalsIgnoreCase("heLLO worlD");
 		System.out.println("isEqualsIgnoreCase : " + isEqualsIgnoreCase);
 
+		
 		// empty
 		boolean isEmpty = str.isEmpty();
 		System.out.println("isEmpty : " + isEmpty);
-
+		/*
 		// concat
 		String newStr = str.concat("Softronix");
 		System.out.println("concat : " + newStr);
