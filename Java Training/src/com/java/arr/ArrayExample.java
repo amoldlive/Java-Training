@@ -35,7 +35,7 @@ public class ArrayExample {
 
 		System.out.println("Length of array : "+studentIds.length);
 		
-		for (int index = 0; index <= (studentIds.length-1); index++) {
+		for (int index = 0; index < studentIds.length; index++) {
 			System.out.println(studentIds[index]);
 			//some logic
 		}

@@ -92,7 +92,7 @@ class AssignmentOperator{
 	 
 	 */
 	int val=10;
-	int val2;
+	int val2;					
 	public void show() {
 		System.out.println("val2 : "+ val2);
 		System.out.println(val2+=val);
