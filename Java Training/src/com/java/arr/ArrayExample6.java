@@ -7,7 +7,7 @@ public class ArrayExample6 {
 		
 		//array 1
 		int elementArr[]= {11,31,41,102,51,61,71,81,91,101};
-		int searchElement=11;
+		int searchElement=62;
 		
 		print(elementArr);
 		
@@ -32,7 +32,7 @@ public class ArrayExample6 {
 			}
 		}
 		if(count==0) {
-			System.out.println("Element Not Fount");
+			System.out.println("Element Not Found");
 		}
 	}
 	
