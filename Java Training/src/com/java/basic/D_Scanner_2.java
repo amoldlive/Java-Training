@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 //import java.util.Scanner;
 
-public class D_Scanner {
+public class D_Scanner_2 {
 	public static void main(String[] args) {
 
 		// + operator overloded
-		
 			
 		Scanner scanner=new Scanner(System.in);
 		
