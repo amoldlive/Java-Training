@@ -2,6 +2,10 @@ package com.java.oops;
 
 class Sample {
 	
+	public Sample() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	//private variable
 	private int i=20;
 	
