@@ -1,6 +1,8 @@
 package com.java.collect;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Vector;
 
 public class ArrayListExample {
 	public static void main(String[] args) {
@@ -12,7 +14,8 @@ public class ArrayListExample {
 		studentId.add(104);
 		studentId.add(105);
 		
-				
-	 	
+		System.out.println(studentId);
+		
+		 	
 	}
 }
