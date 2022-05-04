@@ -33,7 +33,7 @@ public class FileHandlingExample6 {
 				fileWriter.write("\n");
 			}
 			
-			
+			scanner.close();
 		}else {
 			System.out.println("File Not Fount At Location");
 		}
@@ -41,6 +41,6 @@ public class FileHandlingExample6 {
 		fileWriter.flush();
 		fileWriter.close();
 		System.out.println("New File Created Successfully");
-		
+			
 	}
 }
