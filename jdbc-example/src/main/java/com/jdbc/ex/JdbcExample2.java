@@ -12,14 +12,10 @@ public class JdbcExample2 {
 		
 		try {
 			
-			//step -1  - register a driver --ClassNotFoundException
-			//Class.forName("org.postgresql.Driver");  //java version 1.6 //optional
-			
-			//Step-2 Create Connection --SQLException
 			con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/MyDB", "postgres", "postgres");
 			
 			System.out.println("Connected to Database");
-			//logic
+		
 				
 			String SQL="create table student_details"+ 
 					"("+
