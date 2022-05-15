@@ -18,7 +18,7 @@ public class JdbcExample5 {
 			String SQL = "update student_details set student_name='Rahul Bhutt' where student_id=1;";
 
 			int row = smnt.executeUpdate(SQL);
-			System.out.println("Data Updated successfully : " + row);
+			System.out.println("Data Updated successfully : impacted rows - > " + row);
 			
 		} catch (SQLException e) {
 			System.out.println("Exception while connecting to the database " + e);

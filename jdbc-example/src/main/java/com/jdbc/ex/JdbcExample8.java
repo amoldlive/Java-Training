@@ -2,9 +2,9 @@ package com.jdbc.ex;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
 
 public class JdbcExample8 {
 	public static void main(String[] args) {
@@ -12,36 +12,18 @@ public class JdbcExample8 {
 		try {
 
 			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/MyDB", "postgres", "postgres");
-			System.out.println("Connected to DB Successfully");
+			System.out.println("Connected To Databased");
 
-			Statement smnt = con.createStatement();
+			String SQL = "insert into student_details values(?,?,?,?,?);";
+			PreparedStatement pStmt = con.prepareStatement(SQL);
+			pStmt.setInt(1, 102);
+			pStmt.setString(2, "Shreya Upadhyay");
+			pStmt.setInt(3, 2);
+			pStmt.setInt(4, 1);
+			pStmt.setString(5, "Delhi");
 
-			Scanner scanner = new Scanner(System.in);
-
-			System.out.println("Please Enter Details for Student ");
-
-			System.out.println("Enter Student Id : ");
-			int id = scanner.nextInt();
-
-			scanner.nextLine();
-			System.out.println("Enter Student Name : ");
-			String name = scanner.nextLine();
-
-			System.out.println("Enter Student Year : ");
-			int year = scanner.nextInt();
-
-			System.out.println("Enter Student Sem : ");
-			int sem = scanner.nextInt();
-
-			scanner.nextLine();
-			System.out.println("Enter Student Address : ");
-			String address = scanner.nextLine();
-
-			String SQL = "insert into student_details values(" + id + ",'" + name + "'," + year + "," + sem + ",'"
-					+ address + "');";
-
-			int row = smnt.executeUpdate(SQL);
-			System.out.println("Data inserted into table successfully : " + row);
+			int row = pStmt.executeUpdate();
+			System.out.println("Data inserted into table successfully : rows impacted -> " + row);
 
 		} catch (SQLException e) {
 			System.out.println("Exception while connecting to the database " + e);
@@ -52,6 +34,5 @@ public class JdbcExample8 {
 				System.out.println("Exception while closing resources " + e);
 			}
 		}
-
 	}
 }

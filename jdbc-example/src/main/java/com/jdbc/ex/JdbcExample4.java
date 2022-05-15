@@ -24,7 +24,9 @@ public class JdbcExample4 {
 			Statement smnt = con.createStatement();
 
 			for (int i = 0; i < list.size(); i++) {
-				int row = smnt.executeUpdate(list.get(i));
+				String SQL=list.get(i);
+				System.out.println("SQL : "+SQL);
+				int row = smnt.executeUpdate(SQL);
 				System.out.println("Data inserted into table successfully : " + row);
 			}
 
