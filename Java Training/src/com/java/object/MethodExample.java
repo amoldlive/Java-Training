@@ -11,11 +11,12 @@ public class MethodExample {
 		
 		//double the number 
 		int ivalue=methodExample.getData(12);
+		System.out.println("iValue of return method : "+ivalue);
 		//some logic
-		int doubleVal=ivalue*2;
+		//int doubleVal=ivalue*2;
 		//print result
 		
-		System.out.println("Double Value : "+doubleVal);
+	//	System.out.println("Double Value : "+doubleVal);
 	}
 	
 	//defined in MethodExample class
@@ -25,7 +26,7 @@ public class MethodExample {
 
 	//defined in MethodExample class
 	public int getData(int i) {
-		System.out.println("Value of I : "+i);
+		//System.out.println("Value of I : "+i);
 		//block of statements
 		return i;
 	}
