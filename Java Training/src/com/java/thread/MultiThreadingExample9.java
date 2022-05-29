@@ -30,19 +30,22 @@ public class MultiThreadingExample9 {
 		OwnThread t3 = new OwnThread();
 		t3.setName("T-3");
 
-		t1.start();
-		t2.start();
-		t3.start();
+		// t1.start();
+		// t2.start();
+		// t3.start();
 
 		// join - lets wait to finish this thread execution
-		/*
-		 * t3.start(); //first start
-		 * 
-		 * try { t3.join(); //then join } catch (InterruptedException e) { // TODO
-		 * Auto-generated catch block e.printStackTrace(); }
-		 * 
-		 * t1.start(); t2.start();
-		 * 
-		 */
+
+		t3.start(); // first start
+
+		try {
+			t3.join(); // then join
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}
+
+		t1.start();
+		t2.start();
+
 	}
 }

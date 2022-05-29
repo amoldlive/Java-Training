@@ -2,7 +2,7 @@ package com.java.thread;
 
 class Table {
 	// synchronize this
-	void printTable(int n) {
+	synchronized void printTable(int n) {
 		System.out.println("Start execution");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(n * i);
