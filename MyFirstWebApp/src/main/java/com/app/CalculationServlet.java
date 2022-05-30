@@ -9,20 +9,34 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/add")
-public class AdditionServlet extends HttpServlet {
+@WebServlet("/calc")
+public class CalculationServlet extends HttpServlet {
 		
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//logic
-		//System.out.println("Hello World");
 		int num1=Integer.valueOf(request.getParameter("num1"));
 		int num2=Integer.valueOf(request.getParameter("num2"));
 		
-		int sum=num1+num2;
+		String[] selectVal=request.getParameterValues("calc");
+		int result=0;
 		
-		PrintWriter out= response.getWriter();
-		out.println("<h1>Addition - "+sum+"</h1>");
+		
+		if(selectVal[0].equalsIgnoreCase("add")) {
+			result=num1+num2;
+		}else if(selectVal[0].equalsIgnoreCase("sub")) {
+			result=num1-num2;
+		}else if(selectVal[0].equalsIgnoreCase("mul")) {
+			result=num1*num2;
+		}else {
+			result=num1/num2;
+		}
+		
+		
+	
+		PrintWriter out=response.getWriter();
+		out.print("<h1>");
+		out.print("Result  = "+result);
+		out.print("<h1>");
 		
 	}
 	
