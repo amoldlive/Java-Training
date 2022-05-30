@@ -1,0 +1,41 @@
+Core java mini project 
+------------------------
+
+Bookshelf Management System
+---------------------------------------
+Table 1 - book_shelf
+column - 
+
+	book_id (primary key , auto generated) , 
+	book_name , 
+	book_desc , 
+	book_timestamp , 
+	book_author , 
+	book_publication,
+	book_publication_year , 
+	book_version 
+
+
+ 
+Welcome to Bookshelf Management System
+--------------------------------------------------
+1. Add Book
+2. Delete Book
+3. update Book
+4. Display Book Shelf
+5. Quite
+Please enter option number - 
+1
+
+--enter data
+
+Book added successfully 
+
+1. Add Book
+2. Delete Book
+3. update Book
+4. Display Book Shelf
+5. Quite
+Please enter option number - 
+		
+	

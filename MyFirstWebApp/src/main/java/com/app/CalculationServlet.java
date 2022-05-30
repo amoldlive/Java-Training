@@ -12,6 +12,27 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/calc")
 public class CalculationServlet extends HttpServlet {
 		
+	
+	@Override
+	public void init() throws ServletException {
+
+	}
+	
+	@Override
+	public void destroy() {
+
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int num1=Integer.valueOf(request.getParameter("num1"));
