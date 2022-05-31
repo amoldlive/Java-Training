@@ -13,25 +13,6 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CalculationServlet extends HttpServlet {
 		
 	
-	@Override
-	public void init() throws ServletException {
-
-	}
-	
-	@Override
-	public void destroy() {
-
-	}
-	
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-	}
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-	}
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
