@@ -25,8 +25,9 @@ public class LoginRedirectServlet extends HttpServlet {
 		String userId = request.getParameter("uid");
 		String password = request.getParameter("pswd");
 		 
-		/*
+		/* 
 		HttpSession session=request.getSession();
+		//session.removeAttribute("uid");
 		String userId=(String) session.getAttribute("uid");
 		String password=(String) session.getAttribute("pswd");
 		*/
