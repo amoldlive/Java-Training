@@ -9,16 +9,24 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/loginv6")
-public class LoginServletV6 extends HttpServlet {
+@WebServlet("/loginv7")
+public class LoginServletV7 extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		//URL REWRITTING
-		String data = request.getParameter("data");
-		response.sendRedirect("https://www.google.co.in/search?q="+data);
+		String userId = request.getParameter("uid");
+		String password = request.getParameter("pswd");
+
+		/*
+		HttpSession session = request.getSession();
+		session.setAttribute("uid", userId);
+		session.setAttribute("pswd", password);
+		 */
+		response.sendRedirect("loginredirect");
 	}
+
 }
