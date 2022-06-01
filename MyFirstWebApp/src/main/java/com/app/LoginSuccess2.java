@@ -23,7 +23,7 @@ public class LoginSuccess2 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		String n = request.getParameter("uid");
-		out.print("Welcome " + n +"					"+date);
+		out.print("Welcome " + n +"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	"+date);
 		out.print("<br/><h1>My App<h1><hr/>");
 	}
 
