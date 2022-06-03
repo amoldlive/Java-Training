@@ -21,11 +21,11 @@ public class LoginServletV7 extends HttpServlet {
 		String userId = request.getParameter("uid");
 		String password = request.getParameter("pswd");
 
-		/*  
+		  
 		HttpSession session = request.getSession();
 		session.setAttribute("uid", userId);
 		session.setAttribute("pswd", password);
-		*/
+		
 		//session.invalidate();
 		
 		response.sendRedirect("loginredirect");

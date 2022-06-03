@@ -40,7 +40,7 @@ public class LoginServletV4 extends HttpServlet {
 			// RequestDispatcher rd = request.getRequestDispatcher("loginsuccess.html");
 			// rd.forward(request, response);
 
-			// RequestDispatcher rd = request.getRequestDispatcher("loginsuccess.jsp");
+			 //RequestDispatcher rd = request.getRequestDispatcher("loginsuccess.jsp");
 			// rd.forward(request, response);
 
 		} else {

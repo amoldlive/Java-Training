@@ -20,6 +20,10 @@ public class LoginServletV5 extends HttpServlet {
 		String userId = request.getParameter("uid");
 		String password = request.getParameter("pswd");
 
-		response.sendRedirect("loginv2?uid="+userId+"&pswd="+password);
+		
+		RequestDispatcher rd = request.getRequestDispatcher("loginv3");
+		rd.forward(request, response);
+
+		//response.sendRedirect("loginv2?uid="+userId+"&pswd="+password);
 	}
 }

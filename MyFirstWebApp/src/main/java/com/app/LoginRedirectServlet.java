@@ -22,15 +22,15 @@ public class LoginRedirectServlet extends HttpServlet {
 		String validPswd = "admin123";
 
 		
-		String userId = request.getParameter("uid");
-		String password = request.getParameter("pswd");
+		//String userId = request.getParameter("uid");
+		//String password = request.getParameter("pswd");
 		 
-		/* 
+		 
 		HttpSession session=request.getSession();
 		//session.removeAttribute("uid");
 		String userId=(String) session.getAttribute("uid");
 		String password=(String) session.getAttribute("pswd");
-		*/
+		
 		PrintWriter out = response.getWriter();
 		
 		System.out.println("User ID  : "+userId);
