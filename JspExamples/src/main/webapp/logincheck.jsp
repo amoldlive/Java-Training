@@ -14,11 +14,10 @@
 	<%
 	String uid = request.getParameter("uid");
 	String pswd = request.getParameter("pswd");
-	if(defaultUid.equals(uid) && defaultPswd.equals(pswd)){	
-		out.print("Welcome - " + uid);
+	if(defaultUid.equals(uid) && defaultPswd.equals(pswd)){
+		response.sendRedirect("success.jsp?uname="+uid);
 	}else{
-		out.print("Login Failed Please Try again ");
-		out.println("<a href='loginv2.jsp'> login here </a>");
+		response.sendRedirect("failure.jsp?uname="+uid);
 	}	
 	%>
 </body>

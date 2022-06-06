@@ -9,7 +9,7 @@
 <body>
 	<h1>Welcome to JSP Training</h1>
 	<hr>
-	<form action="welcome2.jsp">
+	<form action="logincheck.jsp">
 		user Id <input type="text" name="uid"> 
 		user Password <input type="text" name="pswd">
 		<input type="submit">

@@ -17,7 +17,7 @@
 	<a href="declaration.jsp"> Declaration Tag </a>
 	<br>
 	<br>
-	<a href="loginv2.jsp"> Request </a>
+	<a href="loginv2.jsp"> Request - response </a>
 	<br>
 	<br>
 </body>
