@@ -23,7 +23,10 @@
 	<a href="loginv3.jsp"> session </a>
 	<br>
 	<br>
-	<a href="loginv2.jsp"> config </a>
+	<a href="loginv4.jsp"> Cookie </a>
+	<br>
+	<br>
+	<a href="config.jsp"> config </a>
 	<br>
 	<br>
 	<a href="loginv2.jsp"> config </a>

@@ -3,5 +3,27 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>configCheck</servlet-name>
+		<jsp-file>/configCheck.jsp</jsp-file>
+
+		<init-param>
+			<param-name>drivername</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>configCheck</servlet-name>
+		<url-pattern>/configCheck</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>collagename</param-name>
+		<param-value>YCCE</param-value>
+	</context-param>
+
 </web-app>
