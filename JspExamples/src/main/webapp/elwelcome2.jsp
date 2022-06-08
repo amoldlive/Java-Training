@@ -8,7 +8,9 @@
 </head>
 <body>
 	<H1>Welcome to myapp</H1>
-	<h4>Hello - ${param.uid}</h4>
-	
+	<hr>
+	<h2>Hello - ${param.uid}</h2>
+	<h2>CollageName : ${sessionScope.collagename}</h2>
+	<h2>CityName : ${cookie.cityname.value}</h2>
 </body>
 </html>

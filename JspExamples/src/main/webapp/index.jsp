@@ -26,7 +26,7 @@
 	<a href="loginv4.jsp"> Cookie </a>
 	<br>
 	<br>
-	<a href="config.jsp"> config </a>
+	<a href="config.jsp"> config | Application </a>
 	<br>
 	<br>
 	<a href="pagedir.jsp"> Page-directive </a>

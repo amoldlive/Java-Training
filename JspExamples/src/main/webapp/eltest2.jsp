@@ -9,7 +9,7 @@
 <body>
 	<h1>Welcome to JSP Training</h1>
 	<hr>
-	<form action="elwelcome.jsp">
+	<form action="elwelcome2.jsp">
 		<%
 			session.setAttribute("collagename", "Softronix");
 
