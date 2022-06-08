@@ -7,7 +7,8 @@
 <title>Welcome</title>
 </head>
 <body>
-	<h3>Successfully logged Out !</h3>
+	<%session.invalidate(); %>
+	<h3>You Are Successfully logged Out !</h3>
 	<%@include file="MyApp.jsp" %>
 </body>
 </html>

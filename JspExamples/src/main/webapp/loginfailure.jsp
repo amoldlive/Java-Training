@@ -7,6 +7,7 @@
 <title>Welcome</title>
 </head>
 <body>
+	<%session.invalidate(); %>
 	<h3>Login Failed | use correct user Id and Password !</h3>
 	<%@include file="MyApp.jsp" %>
 </body>

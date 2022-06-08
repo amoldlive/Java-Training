@@ -13,33 +13,40 @@
 <title>MyApp</title>
 </head>
 <body>
-
-	<h1>Welcome To My App</h1>
-	User - ${sessionScope.uid}  | LoginTime :${sessionScope.loginTime}  	
-	<span style="float:right;"> Home		|	About US			|	<a href="logout.jsp">Logout</a>	</span>
-	<hr>
 	<%
-	ContactsManager contactsManager = new ContactsManager();
-	Map<String, String> contacts = contactsManager.getContacts();
-
-	Set<Entry<String, String>> entrySet = contacts.entrySet();
+		if(null!=session && null!=session.getAttribute("uid")){
 	%>
-	<table align="center" border="1">
-		<tr>
-			<th>Contact Name</th>
-			<th>Contact Number</th>
-		</tr>
+			<h1>Welcome To My App</h1>
+			User - ${sessionScope.uid}  | LoginTime :${sessionScope.loginTime}  	
+			<span style="float:right;"> Home		|	About US			|	<a href="logout.jsp">Logout</a>	</span>
+			<hr>
+			<%
+			ContactsManager contactsManager = new ContactsManager();
+			Map<String, String> contacts = contactsManager.getContacts();
 
-		<%
-		for (Entry<String, String> entry : entrySet) {
-		%>
-		<tr>
-			<td><%=entry.getKey()%></td>
-			<td><%=entry.getValue()%></td>
-		</tr>
-		<%
-		}
-		%>
-	</table>
+			Set<Entry<String, String>> entrySet = contacts.entrySet();
+			%>
+			<table align="center" border="1">
+				<tr>
+					<th>Contact Name</th>
+					<th>Contact Number</th>
+				</tr>
+
+				<%
+				for (Entry<String, String> entry : entrySet) {
+				%>
+				<tr>
+					<td><%=entry.getKey()%></td>
+					<td><%=entry.getValue()%></td>
+				</tr>
+				<%
+				}
+				%>
+			</table>
+	<% 	}else{ 
+			response.sendRedirect("logout.jsp");	
+ 	} %>
+	
+	
 </body>
 </html>
