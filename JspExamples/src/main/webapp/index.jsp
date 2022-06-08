@@ -29,7 +29,20 @@
 	<a href="config.jsp"> config </a>
 	<br>
 	<br>
-	<a href="loginv2.jsp"> config </a>
+	<a href="pagedir.jsp"> Page-directive </a>
+	<br>
+	<br>
+	<a href="pagedir2.jsp"> Page-directive exception handling </a>
+	<br>
+	<br>
+	<a href="MyPage.jsp"> include-directive </a>
+	<br>
+	<br>
+
+	<a href="eltest.jsp"> Expression Language [EL] </a>
+	<br>
+	<br>
+	<a href="MyApp.jsp"> Login-logout Module </a>
 	<br>
 	<br>
 </body>
