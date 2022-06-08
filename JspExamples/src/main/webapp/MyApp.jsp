@@ -7,9 +7,9 @@
 <title>Add</title>
 </head>
 <body>
-	<h1>Welcome to JSP Training</h1>
+	<h1>Welcome to My App</h1>
 	<hr>
-	<form action="welcome.jsp">
+	<form action="logincheck" method="post">
 		<table align="center">
 			<tr>
 				<td colspan="2" align="center"><b>Login Here</b></td>
