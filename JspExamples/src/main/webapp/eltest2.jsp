@@ -10,6 +10,11 @@
 	<h1>Welcome to JSP Training</h1>
 	<hr>
 	<form action="elwelcome.jsp">
+		<%
+			session.setAttribute("collagename", "Softronix");
+
+			response.addCookie(new Cookie("cityname","Nagpur"));
+		%>
 		Enter Name : <input type="text" name="uid"> 
 		<input type="submit" value="click me">
 	</form>

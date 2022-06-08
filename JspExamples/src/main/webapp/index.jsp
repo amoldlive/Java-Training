@@ -38,8 +38,10 @@
 	<a href="MyPage.jsp"> include-directive </a>
 	<br>
 	<br>
-
 	<a href="eltest.jsp"> Expression Language [EL] </a>
+	<br>
+	<br>
+	<a href="eltest2.jsp"> Expression Language [EL]-2 </a>
 	<br>
 	<br>
 	<a href="MyApp.jsp"> Login-logout Module </a>

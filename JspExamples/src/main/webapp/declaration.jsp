@@ -9,7 +9,9 @@
 </head>
 <body>
 	<!--expression Tag  -->
-	<%!int global_Var = 10;%>
+	<%!
+	int global_Var = 10;
+	%>
 	<%="Global Variable : " + global_Var%>
 
 	<Hr>

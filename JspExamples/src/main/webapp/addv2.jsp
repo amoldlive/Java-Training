@@ -10,7 +10,7 @@
 		<%
 			int a=10;
 			int b=20;
-			int c=10+30;
+			int c=a+b;
 			out.println("Addition : "+ c);
 		%>
 </body>

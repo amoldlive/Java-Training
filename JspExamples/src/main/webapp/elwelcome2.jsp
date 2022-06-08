@@ -7,11 +7,6 @@
 <title>Welcome</title>
 </head>
 <body>
-		<% 
-			String name=request.getParameter("uid");
-			out.print("Hello : "+name);
-		%>	
-	<hr>
 	<H1>Welcome to myapp</H1>
 	<h4>Hello - ${param.uid}</h4>
 	
