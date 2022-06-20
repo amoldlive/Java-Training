@@ -18,16 +18,16 @@ public class BookShelfRunner {
 		book.setBookVersion(1);
 		book.setBookAuthor("P. S. Shastri");
 
-		// bookShelfRepositoryImpl.saveBook(book2);
+		//bookShelfRepositoryImpl.saveBook(book);
 
 		System.out.println("*******************");
 
-		/*
+		
 		List<Book> bookList = bookShelfRepositoryImpl.getAllBook();
-		for (Book book : bookList) {
-			System.out.println(book);
+		for (Book bookx : bookList) {
+			System.out.println(bookx);
 		}
-		*/
+		
 		
 		System.out.println("*******************");
 		
