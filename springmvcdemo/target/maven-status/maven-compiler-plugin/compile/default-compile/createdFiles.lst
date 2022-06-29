@@ -1,1 +1,8 @@
-com\myapp\MyAppHelloWorld.class
+com\myapp\repository\MyAppConfig.class
+com\myapp\model\User.class
+com\myapp\repository\MyAppRepositoryImpl.class
+com\myapp\repository\UserMapper.class
+com\myapp\RegistrationController.class
+com\myapp\repository\UserQueryConstants.class
+com\myapp\LoginController.class
+com\myapp\repository\MyAppRepositoryInterface.class
