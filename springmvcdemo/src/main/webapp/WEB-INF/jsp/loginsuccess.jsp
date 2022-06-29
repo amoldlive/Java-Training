@@ -10,9 +10,10 @@
 <body>
 	<h2>MyApp Application</h2>
 	<h5>Hello	<%=request.getAttribute("userId")%>		<span style="float:right;">Login Time <%=new Date() %></span></h5>
-	<span style="float:right;font-style: oblique;font-weight: bold;"><a href="logout.jsp">Logout</a>	</span>
+	<span style="float:right;font-style: oblique;font-weight: bold;"><a href="index.jsp">Logout</a>	</span>
 	<br>
+	<%session.setAttribute("userId", request.getAttribute("userId"));%>	
 	<hr>
-	
+	<a href="showallusers">Show All Registered Users</a>
 </body>
 </html>

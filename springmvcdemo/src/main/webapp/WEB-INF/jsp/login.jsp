@@ -7,7 +7,7 @@
 <body>
 	<br>
 	<div>
-		<form action="loginv4">
+		<form action="loginv5" method="post">
 			userId <input type="text" name="uid"> <br> <br>
 			Password <input type="text" name="pswd"> <br> <br>
 			<input type="submit">
