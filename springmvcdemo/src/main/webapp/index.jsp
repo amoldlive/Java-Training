@@ -9,7 +9,7 @@
 	<div>
 		<h2>MyApp Application</h2>
 		<hr>
-		<form action="loginv5" method="post">
+		<form action="login" method="post">
 			userId <input type="text" name="uid"> <br> <br>
 			Password <input type="text" name="pswd"> <br> <br>
 			<input type="submit">
