@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "33418143-f92c-4254-b56c-edcb46e6fe96",
+		"name": "MYApp2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2156043"
+	},
+	"item": [
+		{
+			"name": "basic v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "basic v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sayhello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sayhello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "basic v3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/path/amol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path",
+						"amol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "basic v4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/path?fname=AMOL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "AMOL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/path?fname=AMOL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "AMOL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getuser?username=\"minal\"&password=\"priya\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getuser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "\"minal\""
+						},
+						{
+							"key": "password",
+							"value": "\"priya\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"userno\": \"53e69417-5c9a-4cf4-ab5a-b22407653f41\",\r\n        \"userid\": \"Rahul\",\r\n        \"userpassword\": \"abc@123\",\r\n        \"usercreationdate\": \"Sun Jul 03 09:45:55 IST 2022\",\r\n        \"dob\": \"2022-07-14\",\r\n        \"gender\": \"male\",\r\n        \"address\": \"Nagpur\",\r\n        \"city\": \"Nagpur\",\r\n        \"state\": \"Maharashtra\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveuser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
