@@ -9,12 +9,12 @@
 	<div>
 		<h2>MyApp Application</h2>
 		<hr>
-		<form action="loginv4">
+		<form action="login" method="post">
 			userId <input type="text" name="uid"> <br> <br>
 			Password <input type="text" name="pswd"> <br> <br>
 			<input type="submit">
 		</form>
-		<a href="">Sign Up Here</a>
+		<a href="registration.jsp">Sign Up Here</a>
 	</div>
 </body>
 </html>
