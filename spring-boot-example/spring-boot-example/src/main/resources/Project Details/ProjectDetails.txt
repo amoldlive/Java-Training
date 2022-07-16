@@ -1,0 +1,38 @@
+Ways to Create Project 
+------------------------
+Maven
+Spring intializer
+
+Dependency 
+============
+web
+dev tools
+postgres
+spring-data-jdbc
+
+Tools
+----------
+Spring tool suit 4
+POstman
+
+Spring Boot 
+===============
+1. download project 
+2. import into eclipse
+3. set java 
+4. delete  below from pom file
+<properties>
+		<java.version>17</java.version>
+	</properties>
+5. delete test case from test file	
+3. maven - clean install
+4. update project
+6. update java build path
+
+Code Test Tools
+===================
+browser
+postman
+java code / any other language code
+
+
